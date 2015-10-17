@@ -22,6 +22,12 @@ script:
   - ./vendor/bin/phpcs --standard=PSR2 --report=emacs --extensions=php --warning-severity=0 src/ tests/PHPSA/
   - ./bin/phpsa check -vvv ./fixtures
   - ./vendor/bin/phpunit -v --debug --coverage-clover=coverage.clover
+  # test frameworks
+  - git clone -b 2.8 https://github.com/symfony/symfony.git
+  - ./bin/phpsa check -vvv ./symfony
+  - git clone https://github.com/zendframework/zf2.git
+  - ./bin/phpsa check -vvv ./zf2
+
 
 after_script:
   - if [ "$TRAVIS_PHP_VERSION" == "5.6" ]; then wget https://scrutinizer-ci.com/ocular.phar; fi
