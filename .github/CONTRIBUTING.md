@@ -19,7 +19,8 @@ if (true == $someParameter) {
 
 * Avoid strict compare When it's not needed.
 * Avoid `static` methods.
-* Don't use `Singletons` anywere.
+* Use `static::` binding if it's rly needed, mostly you will use `parent::` or `self::`
+* Don't use `Singleton` patern anywere.
 * Avoid aliases for functions: `sizeof`, `join` and etc.
 * Avoid global variables.
 * Use type stricts.
@@ -63,7 +64,7 @@ What we don't use:
 
 `\PHPSA\Analyzer\HelperS\ResolveExpressionSTrait`
 
-### GIT
+## GIT
 
 Please don't use "merged" in your PR, We are using "rebase", small guide:
 
