@@ -19,11 +19,11 @@ if (true == $someParameter) {
 
 * Avoid strict compare When it's not needed.
 * Avoid `static` methods.
-* Use `static::` binding if it's rly needed, mostly you will use `parent::` or `self::`
-* Don't use `Singleton` patern anywere.
+* Use `static::` binding if it's really needed, mostly you will use `parent::` or `self::`
+* Don't use `Singleton` pattern anywhere.
 * Avoid aliases for functions: `sizeof`, `join` and etc.
 * Avoid global variables.
-* Use type stricts.
+* Use strict types (objects, arrays), `function testMethod(array $array = [])` as an example.
 * For null checking use `$v === null` instead of `is_null()`.
 * Don't forget about empty lines after logical blocks:
 
@@ -48,9 +48,9 @@ public function simpleMethod($a)
 #### Naming
 
 * For `abstract` class We are using `Abstract` prefix, `AbstractCondition`
-* For `trait`(s) We are using `Traif` postfix, `ResolveExpressionTrait`
-* For `interfaces`(es) We are using `Interface` postfix, `PassFunctionCallInterface`
-* For any class(es) that extends from `Exception` We are using `Exception` postfix, `UnknownException`
+* For `trait`(s) We are using `Trait` suffix, `ResolveExpressionTrait`
+* For `interfaces`(es) We are using `Interface` suffix, `PassFunctionCallInterface`
+* For any class(es) that extends from `Exception` We are using `Exception` suffix, `UnknownException`
 
 #### Namespacing
 
@@ -67,6 +67,10 @@ What we don't use:
 ## GIT
 
 Please don't use "merged" in your PR, We are using "rebase", small guide:
+
+[Git Branching Rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
+
+Example:
 
 ```bash
 git checkout YOU_BRANCH
