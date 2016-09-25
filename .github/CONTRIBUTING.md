@@ -82,4 +82,23 @@ git rebase ORIGIN_REMOVE_OF_THE_PHPSA/master
 git push YOU_REMOVE YOU_BRANCH -f
 ```
 
+## Testing
+
+We are using Makefile:
+
+```bash
+# Running code style check, unit tests, check PHPSA and fixtures
+make test
+
+# Running unit tests
+make tests
+
+
+# Running all (CI)
+make ci
+
+# Running code style check
+make cs
+```
+
 Thanks :cake:
