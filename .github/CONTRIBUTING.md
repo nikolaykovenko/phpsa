@@ -101,4 +101,14 @@ make ci
 make cs
 ```
 
+## Maintaining (for push only developers)
+
+- If you are going to close issue, write a comment why you are going to close it (with referenced link to commit/issue/PR)
+- Before merge check that CI pass
+- Merge after review (yet another developer review)
+- Check that code use our `Coding Standards` and `Naming Conventions`
+- Don't merge big PRs (only simple PRs), if it's a big PR - please ping @ovr
+- Write `Thanks` to developer(s) and reviewer(s) after PR was merged
+- Protect any `merge` commits in PR, you should write a notice to submitter
+
 Thanks :cake:
