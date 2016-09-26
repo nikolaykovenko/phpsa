@@ -22,6 +22,6 @@ tests: tests-local
 tests-ci:
 	./vendor/bin/phpunit -v --debug --coverage-clover=coverage.clover
 
-test: cs tests-local check-fixtures check-src
+test: tests-local cs
 
-ci:	cs tests-ci check-fixtures check-src
+ci: cs tests-ci check-fixtures check-src
