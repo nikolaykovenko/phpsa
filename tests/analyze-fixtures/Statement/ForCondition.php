@@ -21,6 +21,8 @@ class ForCondition
 }
 ?>
 ----------------------------
+PHPSA\Analyzer\Pass\Statement\ForCondition
+----------------------------
 [
     {
         "type": "for_condition",
