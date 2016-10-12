@@ -4,7 +4,6 @@ namespace Tests\Analyze\Fixtures\Statement;
 
 class ForCondition
 {
-
     public function testMultipleConditions()
     {
         for ($i=0,$j=0; $i<3,$j<2; $i++,$j++) {

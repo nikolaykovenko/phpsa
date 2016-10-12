@@ -9,7 +9,6 @@ use PHPSA\Context;
 
 class ForCondition implements AnalyzerPassInterface
 {
-
     use DefaultMetadataPassTrait;
 
     public function pass(For_ $stmt, Context $context)
