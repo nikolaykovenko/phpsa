@@ -27,6 +27,6 @@ PHPSA\Analyzer\Pass\Statement\ForCondition
         "type": "for_condition",
         "message": "You should merge the conditions into one with &&",
         "file": "ForCondition.php",
-        "line": 9
+        "line": 8
     }
 ]
